@@ -20,13 +20,7 @@ public class DeleteFile {
 				System.out.println(file.getName());
 			}else{
 				for (File file1 : files) {
-					if(file1.isDirectory()){
-						getfiles(file1);
-					}else{
-						file1.delete();
-						System.out.println(file1.getName());
-					}
-					
+					getfiles(file1);
 				}
 			}
 			
